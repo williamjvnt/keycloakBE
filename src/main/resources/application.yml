@@ -1,0 +1,21 @@
+server:
+    port: 8085
+#    servlet:
+#        context-path: /demo
+spring:
+    application:
+        name: demo
+#    security:
+#        oauth2:
+#            resourceserver:
+#                jwt:
+#                    issue
+
+
+keycloak:
+    auth-server-url: http://localhost:8080/auth
+    realm: restapi
+    resource: mobile_banking
+    public-client: true
+    bearer-only: true
+    realm-public-key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtT+Ul4ndpVbhMB7K6rEJkAL2u6f9WQnrHw2a5t+ZmPhb16apCs+hupMYACktbwSO2T3bJvrcPiI3X4T/1DY6lQw83K1ufQOQVqSddFRkIojJuiatrcP1P6wirgXVklewfBW4nDg42Q3Ml3P2vznXGoBjRNqMhbftzO7ypOcjH+K1cKu9rYp3y9UgWvdDbC8s5qS/JXXci3XFif2AhRObzvr8ZOQNSVM3SEvwm+ODjfzlBuEf7MjdkPbDFH8l3IccQ2Tt4NJSf7CVH4eS5MhJJXrt3iEEFCwoyNANlUlGCU4FWg5JhPb3U6VZhVqqxYAVXK59juO6uqYkSCR9TJmhtQIDAQAB
